@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- esse viewport é o que faz a página funcionar direitinho no celular -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CredMais | Gestão de crédito para pequenos negócios</title>
+
+  <!-- fonte do google, se quiser outra é só trocar aqui e no css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap" rel="stylesheet">
+
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="../Static/css/style.css">
+</head>
+<body>
+
+  <!-- header flutuante: fica solto em cima do banner e, quando você desce,
+       o css (position: sticky) cola ele no topo da tela -->
+  <header class="topo" id="topo">
+    <nav>
+      <!-- a barrinha azul que desliza até o link atual, quem move ela é o js -->
+      <span class="marcador"></span>
+
+      <!-- o data-texto repete o texto do link: o css usa ele pra reservar a largura do negrito -->
+      <a href="#inicio" class="ativo" data-texto="Início">Início</a>
+      <a href="#sobre" data-texto="Sobre">Sobre</a>
+      <a href="#beneficios" data-texto="Benefícios">Benefícios</a>
+      <a href="#como-funciona" data-texto="Como Funciona">Como Funciona</a>
+      <a href="#contato" data-texto="Contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ banner ============ -->
+    <!-- o fundo azul/verde é uma imagem, definida no css (.banner) -->
+    <section class="banner" id="inicio" data-secao="inicio">
+      <div class="banner-texto">
+        <!-- troca o nome de cada imagem depois, tá tudo com placeholder em maiúsculo -->
+        <img class="logo" src="../Static/img/Logo.png" alt="CredMais - Gestão de crédito para pequenos negócios">
+
+        <h1>Crédito que <span>impulsiona</span> o seu negócio</h1>
+
+        <p>O CredMais é uma plataforma de gestão de crédito para pequenos negócios, desenvolvida para facilitar simulações, analisar riscos e organizar empréstimos de forma simples e segura.</p>
+
+        <div class="botoes">
+          <a href="#" class="btn btn-principal">Criar conta</a>
+          <a href="#" class="btn btn-secundario">Entrar</a>
+        </div>
+      </div>
+
+      <img class="banner-imagem" src="../Static/img/banner-frontpage.png" alt="Notebook com painel de gráficos e escudo de segurança">
+    </section>
+
+    <!-- ============ nosso objetivo ============ -->
+    <section class="secao objetivo" id="sobre" data-secao="sobre">
+      <div>
+        <h2>Nosso objetivo</h2>
+        <p>Oferecer uma plataforma simples e segura para ajudar pequenos negócios a simular empréstimos, analisar o impacto das parcelas na renda e organizar melhor suas finanças. Com o CredMais, o empreendedor consegue acompanhar receitas, despesas, empréstimos e riscos de forma mais clara, facilitando decisões financeiras mais conscientes e reduzindo as chances de comprometer excessivamente o caixa do negócio.</p>
+      </div>
+      <img src="../Static/img/ilustracao-frontpage.png" alt="Painel financeiro com gráficos">
+    </section>
+
+    <!-- ============ benefícios ============ -->
+    <section class="secao" id="beneficios" data-secao="beneficios">
+      <h2>Benefícios</h2>
+
+      <!-- grid de 3 colunas, os cards se ajeitam sozinhos -->
+      <div class="grid-beneficios">
+        <article class="card">
+          <img src="../Static/img/icone-calc-frontpage.png" alt="">
+          <div>
+            <h3>Simulação de créditos</h3>
+            <p>Simule diferentes cenários e encontre a melhor opção para o seu momento</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="../Static/img/icone-grafico-frontpage.png" alt="">
+          <div>
+            <h3>Análise de riscos</h3>
+            <p>Avalie o seu perfil e entenda as melhores oportunidades de forma segura.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="../Static/img/icone-carteira-frontpage.png" alt="">
+          <div>
+            <h3>Controle financeiro</h3>
+            <p>Organize suas receitas, despesas e empréstimos em um só lugar.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="../Static/img/icone-documento-frontpage.png" alt="">
+          <div>
+            <h3>Histórico organizado</h3>
+            <p>Acompanhe todo o seu histórico de simulações e contratos.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="../Static/img/icone-escudo-frontpage.png" alt="">
+          <div>
+            <h3>Mais segurança</h3>
+            <p>Seus dados protegidos com as melhores práticas de segurança.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="../Static/img/icone-lampada-frontpage.png" alt="">
+          <div>
+            <h3>Decisões mais inteligentes</h3>
+            <p>Tenha insights e informações para planejar o crescimento do seu negócio.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ por que escolher ============ -->
+    <section class="secao" data-secao="beneficios">
+      <span class="sobretitulo">Por que escolher</span>
+      <h2>Por que escolher a CredMais?</h2>
+      <p class="subtitulo">Mais do que crédito, um parceiro para o crescimento do seu negócio.</p>
+
+      <div class="grid-motivos">
+        <div class="motivo">
+          <img src="../Static/img/icone-raio.png" alt="">
+          <div>
+            <h3>Praticidade</h3>
+            <p>Tudo online, de forma simples e intuitiva.</p>
+          </div>
+        </div>
+
+        <div class="motivo" id="relogio">
+          <img src="../Static/img/icone-relogio.png" alt="">
+          <div>
+            <h3>Agilidade</h3>
+            <p>Simulações e análises em poucos minutos.</p>
+          </div>
+        </div>
+
+        <div class="motivo">
+          <img src="../Static/img/icone-alvo.png" alt="">
+          <div>
+            <h3>Organização</h3>
+            <p>Suas finanças em um só lugar.</p>
+          </div>
+        </div>
+
+        <div class="motivo">
+          <img src="../Static/img/icone-grafico.png" alt="">
+          <div>
+            <h3>Visão clara</h3>
+            <p>Informações que ajudam a planejar o futuro.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ como funciona ============ -->
+    <section class="secao" id="como-funciona" data-secao="como-funciona">
+      <span class="sobretitulo">Passo a Passo</span>
+      <h2>Como Funciona</h2>
+      <p class="subtitulo">Em poucos passos, você já pode simular, analisar e gerenciar o crédito do seu negócio.</p>
+
+      <!-- as setas também são imagens, ficam entre os cards.
+           no celular o css esconde elas e empilha tudo -->
+      <div class="passos">
+        <article class="passo" id="usuario">
+          <div>
+            <h3>Crie sua conta</h3>
+            <p>Faça sua conta de forma rápida e gratuita.</p>
+          </div>
+          <img src="../Static/img/vetor-usuario.png" alt="">
+        </article>
+
+        <img class="seta" src="../Static/img/seta.png" alt="">
+
+        <article class="passo">
+          <div>
+            <h3>Preencha seu perfil Financeiro</h3>
+            <p>Informe alguns dados do seu negócio.</p>
+          </div>
+          <img src="../Static/img/vetor-documento.png" alt="">
+        </article>
+
+        <img class="seta" src="../Static/img/seta.png" alt="">
+
+        <article class="passo">
+          <div>
+            <h3>Faça a Simulação</h3>
+            <p>Veja as melhores condições de crédito para o seu perfil</p>
+          </div>
+          <img src="../Static/img/vetor-calc.png" alt="">
+        </article>
+
+        <img class="seta" src="../Static/img/seta.png" alt="">
+
+        <article class="passo">
+          <div>
+            <h3>Acompanhe seus Empréstimos</h3>
+            <p>Gerencie seus contratos e acompanhe seu progresso</p>
+          </div>
+          <img src="../Static/img/vetor-grafico.png" alt="">
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ rodapé ============ -->
+  <footer class="rodape" id="contato" data-secao="contato">
+    <div class="rodape-conteudo">
+
+      <div class="rodape-marca">
+        <img class="logo-rodape" src="../Static/img/Logo.png" alt="CredMais">
+        <p>Crédito acessível, gestão inteligente e mais oportunidades para o crescimento</p>
+
+        <div class="redes">
+          <a href="#"><img src="../Static/img/Instagram.png" alt="Instagram"></a>
+          <a href="#"><img src="../Static/img/Facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="../Static/img/Twitter.png" alt="X"></a>
+        </div>
+      </div>
+
+      <div class="rodape-contato">
+        <h4>Entre em contato</h4>
+        <p><img src="../Static/img/icone-telefone.png" alt=""> (18)991220834</p>
+        <p><img src="../Static/img/icone-email.png" alt=""> <a href="mailto:credMais@gmail.com">credMais@gmail.com</a></p>
+        <p><img src="../Static/img/icone-localizacao.png" alt=""> São Paulo - SP</p>
+      </div>
+
+      <nav class="rodape-links">
+        <a href="#">Termos de Uso</a>
+        <a href="#">Privacidade</a>
+        <a href="#">Políticas de Segurança</a>
+      </nav>
+
+      <div class="rodape-direitos">
+        <span>©Todos os direitos reservados CredMais 2026</span>
+        <span>Feito para ajudar e impulsionar pequenos negócios.</span>
+      </div>
+
+    </div>
+  </footer>
+  <script src="../Static/js/script.js"></script>
+</body>
+</html>
